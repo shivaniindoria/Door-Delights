@@ -1,0 +1,104 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fd.css">
+
+    <title>Door Delights</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="ddlogo.png" alt="DoorDelights" width="40px">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#our-services">Services</a></li>
+            <li class="item"><a href="about.html">About Us</a></li>
+            <li class="item"><a href="fg.html">Food Gallery</a></li>
+            <li class="item"><a href="#contact">Contact Us</a></li>
+        </ul>
+    </nav>
+    <hr>
+    <Section id="home">
+        <h1 class="h-primary">Welcome to Door Delights</h1>
+        <p>What would You like to Eat?</p>
+        <p>Now Ordering Food From Your Favourite Restaurant Is Just One Click Away</p>
+        <p></p>
+        <a href="order.html"><button class="btn" onclick="order()">Order Now</button></a>
+    </Section>
+    <hr>
+    <section class="services-container">
+        <h1 class="h-secondary center" id="our-services">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="fs1.jpg" alt="Food Ordering" style="border-radius: 50%;">
+                <h2 class="h-tertiary center">Food Ordering</h2>
+                <p>Hey Guys! Get your favourite food online from your favourite Restaurant </p>
+            </div>
+            <div class="box">
+                <img src="fs2.jpg" alt="Catering" style="border-radius: 50%;">
+                <h2 class="h-tertiary center">Catering</h2>
+                <p>Corporate Events | Birthday Parties | Anniversaries | Marriages | Get Togethers | Special Events </p>
+            </div>
+            <div class="box">
+                <img src="fs3.jpg" alt="Food Ordering" style="border-radius: 50%;">
+                <h2 class="h-tertiary center">Bulk Ordering</h2>
+                <p>Choose from a rich selection of world cuisine veg/non-veg gourmet food </p>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <!-- <h1 class="h-secondary center"></h1> -->
+        <div id="clients">
+            <div class="client-items">
+                <img src="ddlogo.png" alt="Door Delights" width="300px">
+            </div>
+            <div class="client-img">
+                <img src="client.png" alt="" width="450px" >
+            </div>
+        </div>
+        <div class="client-text h-tertiary">
+            <p>Worldwide Trusted And Supported By People with 5 Star Ratings</p>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-secondary center">Contact Us</h1>
+            <div class="contact-box">
+                <div><img src="quote.png" alt="" width="237px" height="246px" id="quote-img" ></div>
+
+                <form action="index.php" method="post">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" name="name" class="contact-input" id="name" placeholder="your name here"><br>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" class="contact-input" id="email" placeholder="yourmail@gmail.com"><br>
+                        <label for="message">Message:</label>
+                        <textarea name="message" class="contact-input" id="message" cols="30" rows="3"></textarea><br>
+                        <input type="submit" name="submit" id="submit" class="btn" width="80px" style="margin-left: 120px;">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="center">
+            <img src="ddlogo.png" alt="" width="35px" style="margin: 10px 10px ;"><br>
+            www.doordelights.com
+            copyright &copy; All rights reserved.<br>
+            <p style="margin-top: 10px;">
+                <b>Follow Here</b> <br> <img src="faacebook.png" alt="" width="25px"> <img src="twitter.png" alt=""
+                    width="25px"> <img src="insta.png" alt="" width="25px">
+            </p>
+
+        </div>
+
+    </footer>
+    <script src="doordelights.js"></script>
+</body>
+
+</html>
