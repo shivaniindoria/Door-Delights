@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    /* background-color: blue; */
+    
+}
+/* css variables */
+:root{
+    --navbar-height: 60px;
+}
+#logo{
+    margin: 0 10px;
+}
+#logo img{
+    /* border-radius: 40%; */
+    height: 80px;
+    width: 80px;
+    /* background-; */
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: relative;
+    top:0px;
+    /* position: fixed; */
+}
+#navbar::before{
+    content: "";
+    background-color: rgb(116, 19, 19);
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    z-index: -1;
+    /* opacity: 0.5; */
+}
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{
+    list-style-type: none;
+    font-size: 1.3rem;
+}
+#navbar ul li a{
+    display: block;
+    padding: 20px 30px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    color: rgb(116, 19, 19);
+}
+/* home section----------------------------------------------------------------------------- */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    /* padding: 0px 200px; */
+    height: 500px;
+    justify-content: center;
+    align-items: center;
+    /* margin: 100px 0; */
+}
+#home::before{
+    
+    content: "";
+    background: url("fdbg.jpg") no-repeat center center/cover;
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    z-index: -2;
+    opacity: 0.89;
+}
+#home h1{
+    color: white;
+    text-align: center;
+    border: 1px solid black;
+    margin-top: 100px;
+    top: 0px;
+    left: 0px;
+    margin-bottom: 20px;
+}
+#home p{
+    margin-top: 10px;
+    color: white;
+    text-align: center;
+    /* border: 3px solid black; */
+    font-size: 1.3rem;
+}
+
+/* services section---------------------------------------------------------------- */
+#services{
+    margin: 12px;
+    display: flex;
+}
+#services .box{
+    border: 2px solid rgb(116, 19, 19);
+    text-align: center;
+    padding: 10px 40px;
+    margin-left: 8px;
+    margin-right: 8px;
+    background: rgba(207, 186, 159, 0.671);
+    
+}
+#services .box img{
+    height: 150px;
+    margin: auto;
+    display: block;
+}
+
+    
+
+
+
+/* client Section ----------------------------------------------------------------*/
+
+#client-section{
+    /* justify-content: center;
+    align-items: center; */
+    height: 350px;
+}
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-items{
+    /* width: 250px; */
+    /* margin-top: 50px; */
+    /* background: blue; */
+}
+.client-img{
+    /* width: 500px; */
+    /* height: 200px;
+    width: 200px; */
+    /* background: red; */
+    /* display: block; */
+}
+.client-text{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+/* contact section--------------------------------------------------------------- */
+#contact{
+    position: relative;
+}
+#contact h1{
+    /* padding-top: 100px; */
+    background: rgb(116, 19, 19);
+    color: white;
+}
+#contact::before{
+    /* margin-top: 100px; */
+
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    /* padding-right: 30px; */
+    /* opacity:0.9; */
+    /* background-color: brown; */
+    background: url(contactus.jpg) no-repeat center center/cover;
+}
+#quote-img{
+    margin-left: 40px;
+    margin-right: 550px;
+    box-shadow: 2px 2px 2px 2px rgb(116, 19, 19);
+}
+.contact-box{
+    display: flex;
+    /* justify-content: right;
+    align-items: right; */
+    padding-top: 50px;
+    padding-right: 50px;
+    /* margin-left: 500px; */
+}
+.contact-box .contact-input{
+    width: 100%;
+    padding: 0.5rem;
+}
+.contact-box form{
+    width: 35%;
+}
+.contact-box label{
+    font-size: 1.1rem;
+    font-weight: bold;
+
+}
+
+ /* footer section -------------------------------------------------------------- */
+footer{
+color: rgb(116, 19, 19);
+font-size: 1rem;
+padding: 40px;
+font-weight: bold;
+border: 2px solid rgb(116, 19, 19);
+background: rgba(207, 186, 159, 0.671);
+}
+
+
+
+/* utitlities class-------------------------------------------------------------- */
+.h-primary{
+    font-size: 3rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2rem;
+    background-color: rgb(219, 76, 24);
+    color: white;
+   }
+.h-tertiary{
+    font-size: 1.5rem;
+    padding: 5px 0px;
+}
+.btn{
+    padding: 15px 70px;
+    border: 2px solid whitesmoke;
+    margin: 50px 0;
+    background-color:rgb(116, 19, 19);
+    color: white;
+    font-weight: bold;
+    align-items: center;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: white;
+    color: rgb(116, 19, 19);
+    border: 2px solid rgb(116, 19, 19);
+    font-weight: bold;
+}
+.center{
+    text-align: center;
+}
+
+/* ----------------------------------------------------------------------- */
+@media (max-width: 1000px) {
+#services{
+        /* margin: 12px; */
+        display: flex;
+        flex-direction: column;
+    }
+    #services .box{
+        /* border: 2px solid rgb(116, 19, 19);
+        text-align: center;
+        padding: 10px 40px;
+        margin-left: 8px;
+        margin-right: 8px;
+        background: rgba(207, 186, 159, 0.671); */
+        margin: 10px;
+    }
+.client-items{
+    /* width: 50px; */
+    display: none;
+}
+.client-img{
+    width: 50px;
+
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    align-items: right;
+    text-align: center;
+    padding-top: 50px;
+    padding-right: 50px;
+    /* margin-left: 500px; */
+}
+.form-group{
+    margin-left: 50px;
+    width: 80%;
+}
+}
+
