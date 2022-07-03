@@ -1,5 +1,5 @@
+{% load static %}
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,11 +8,10 @@
 
     <title>Door Delights</title>
 </head>
-
 <body>
     <nav id="navbar">
         <div id="logo">
-            <img src="ddlogo.png" alt="DoorDelights" width="40px">
+            <img src="{% static "images/logo.png" %}" alt="DoorDelights" width="40px">
         </div>
         <ul>
             <li class="item"><a href="#home">Home</a></li>
@@ -35,17 +34,17 @@
         <h1 class="h-secondary center" id="our-services">Our Services</h1>
         <div id="services">
             <div class="box">
-                <img src="fs1.jpg" alt="Food Ordering" style="border-radius: 50%;">
+                <img src="{% static "images/food-image1.jpg" %}" alt="Food Ordering" style="border-radius: 50%;">
                 <h2 class="h-tertiary center">Food Ordering</h2>
                 <p>Hey Guys! Get your favourite food online from your favourite Restaurant </p>
             </div>
             <div class="box">
-                <img src="fs2.jpg" alt="Catering" style="border-radius: 50%;">
+                <img src="{% static "images/food-image2.jpg" %}" alt="Catering" style="border-radius: 50%;">
                 <h2 class="h-tertiary center">Catering</h2>
                 <p>Corporate Events | Birthday Parties | Anniversaries | Marriages | Get Togethers | Special Events </p>
             </div>
             <div class="box">
-                <img src="fs3.jpg" alt="Food Ordering" style="border-radius: 50%;">
+                <img src="{% static "images/food-image3.jpg" %}" alt="Food Ordering" style="border-radius: 50%;">
                 <h2 class="h-tertiary center">Bulk Ordering</h2>
                 <p>Choose from a rich selection of world cuisine veg/non-veg gourmet food </p>
             </div>
@@ -55,10 +54,10 @@
         <!-- <h1 class="h-secondary center"></h1> -->
         <div id="clients">
             <div class="client-items">
-                <img src="ddlogo.png" alt="Door Delights" width="300px">
+                <img src="{% static "images/logo.png" %}" alt="Door Delights" width="300px">
             </div>
             <div class="client-img">
-                <img src="client.png" alt="" width="450px" >
+                <img src="{% static "images/client.png" %}" alt="" width="450px" >
             </div>
         </div>
         <div class="client-text h-tertiary">
@@ -68,7 +67,7 @@
     <section id="contact">
         <h1 class="h-secondary center">Contact Us</h1>
             <div class="contact-box">
-                <div><img src="quote.png" alt="" width="237px" height="246px" id="quote-img" ></div>
+                <div><img src="{% static "images/quote.png" %}" alt="" width="237px" height="246px" id="quote-img" ></div>
 
                 <form action="index.php" method="post">
                     <div class="form-group">
@@ -87,12 +86,12 @@
     
     <footer>
         <div class="center">
-            <img src="ddlogo.png" alt="" width="35px" style="margin: 10px 10px ;"><br>
+            <img src="{% static "images/logo.png" %}" alt="" width="35px" style="margin: 10px 10px ;"><br>
             www.doordelights.com
             copyright &copy; All rights reserved.<br>
             <p style="margin-top: 10px;">
-                <b>Follow Here</b> <br> <img src="faacebook.png" alt="" width="25px"> <img src="twitter.png" alt=""
-                    width="25px"> <img src="insta.png" alt="" width="25px">
+                <b>Follow Here</b> <br> <img src="{% static "images/facebook-logo.png" %}" alt="" width="25px"> <img src="{% static "images/twitter-logo.png" %}" alt=""
+                    width="25px"> <img src="{% static "images/insta-logo.png" %}" alt="" width="25px">
             </p>
 
         </div>
