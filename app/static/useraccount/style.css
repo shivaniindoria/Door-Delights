@@ -1,0 +1,16 @@
+*{
+    margin: 0px;
+}
+
+.signup-container{
+    width: 30vw;
+    background-color: rgb(245, 244, 244);
+    border-radius: 20px;
+}
+.signup-img{
+    border-radius: 20px;
+    display: inline-block;
+}
+.user-img{
+    display: inline-block;
+}
