@@ -46,3 +46,8 @@ def SignUpView(request):
         messages.success(request, 'Account has been created successfully')
         return render(request, 'useraccount/signup.html')
     return render(request,"useraccount/signup.html")
+
+def LogoutView(request):
+    logout(request)
+    messages.success(request,'Successfully Logged Out')
+    return redirect("homeview")
