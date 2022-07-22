@@ -28,4 +28,6 @@ urlpatterns = [
     path('login/', useraccount_views.LoginView,name='login'),
     path('signup/', useraccount_views.SignUpView,name='signup'),
     path('logout/', useraccount_views.LogoutView,name='logout'),
+    path('forgot-password/', useraccount_views.ForgotPassword,name='forgot-password'),
+    path('password-reset/', useraccount_views.PasswordReset,name='password-reset'),
 ]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

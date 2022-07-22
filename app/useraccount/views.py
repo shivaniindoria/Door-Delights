@@ -51,3 +51,9 @@ def LogoutView(request):
     logout(request)
     messages.success(request,'Successfully Logged Out')
     return redirect("homeview")
+
+def ForgotPassword(request):
+    return render(request,'useraccount/forgot-password.html')
+
+def PasswordReset(request):
+    return render(request,'useraccount/password-reset.html')
